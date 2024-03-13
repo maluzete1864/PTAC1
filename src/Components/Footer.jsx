@@ -1,7 +1,7 @@
 export default function Header(){
     return(
         <header>
-            <h1> Cabeçalho</h1>
+           <p>Desenvolvido por: Maria Luiza Martins Meira</p>
         </header>
     );
 }
