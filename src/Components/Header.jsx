@@ -1,7 +1,7 @@
 export default function Header(){
    return(
      <header>
-     <p>Desenvolvido por: Maria Luiza Martins Meira</p>
+     <h1>PTAC1</h1>
       </header>
     
    );}

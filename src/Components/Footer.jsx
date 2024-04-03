@@ -1,7 +1,7 @@
-export default function Header(){
+export default function Footer(){
     return(
         <footer>
-        <h1>PTAC1</h1>
+            <h1>Desenvolvido por: Maria Luiza Martins Meira</h1>
         </footer>
     );
 }

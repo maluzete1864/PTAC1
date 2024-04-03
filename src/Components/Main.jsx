@@ -18,8 +18,9 @@ export default function Main() {
   console.table(listaContatos);
     return(
         <main>
-            <label htmlFor="nome">Nome:</label>
+            
             <form onSubmit={registrar}>
+            <label htmlFor="nome">Nome:</label>
             <input
             type="text"
             name="nome-contato"
@@ -29,7 +30,7 @@ export default function Main() {
                 (event) => setNome(event.target.value)
               }
             />
-            {nome}
+            
             <label htmlFor="telefone">Telefone:</label>
             <input
             type="tel"
@@ -37,14 +38,18 @@ export default function Main() {
             id="nome"
             value={telefone}
             onChange={
-                (event) => setNome(event.target.value)
+                (event) => setTelefone(event.target.value)
               }
             />
-              {telefone}
-
-            
-
+            <button>Salvar</button>
+              
             </form>
+            { listaContatos.map((contato, index) =>
+              <div key={index}>
+                <p> {contato.nomeSalvo}</p>
+                <p>{contato.telefoneSalvo}</p>
+              </div>
+            )}
         </main>
     )
 }
